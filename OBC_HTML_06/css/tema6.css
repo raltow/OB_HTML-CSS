@@ -1,0 +1,17 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pseudob:hover {
+    background-color: green;
+    color: white;
+}
+.pseudob::before {
+    content: "Pasa por encima"
+}
+.pseudob:hover::before {
+    content: "¡Hecho!"
+}
