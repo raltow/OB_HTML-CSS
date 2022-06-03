@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(243, 232, 232);
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #333;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.lateral {
+    background-color: darkblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.elem-lateral {
+    background-color: darkgray;
+    height: 100%;
+}
+
+.principal {
+    background-color: darkcyan;
+    flex-grow: 3;
+}
+
+@media (max-width: 640px){
+    .container {
+        flex-direction: column-reverse;
+    }
+    .lateral {
+        flex-direction: row;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .elem-lateral {
+        width: 100%;
+    }
+    .principal {
+        flex-grow: 20;
+    }
+}
